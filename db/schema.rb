@@ -10,9 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_06_30_063758) do
+ActiveRecord::Schema.define(version: 2018_06_30_231137) do
 
-  create_table "qrcodes", force: :cascade do |t|
+  create_table "attendances", force: :cascade do |t|
+    t.string "studid"
+    t.date "date"
+    t.boolean "status"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "codes", force: :cascade do |t|
+    t.string "text"
+    t.time "date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "students", force: :cascade do |t|
+    t.string "studid"
+    t.string "name"
+    t.string "surname"
+    t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

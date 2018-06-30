@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  studid: MyString
+  date: 2018-07-01
+  status: false
+
+two:
+  studid: MyString
+  date: 2018-07-01
+  status: false
