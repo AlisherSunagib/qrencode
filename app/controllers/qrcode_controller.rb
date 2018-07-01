@@ -12,7 +12,7 @@ class QrcodeController < ApplicationController
 		require 'rqrcode'
 		key = rand(36**10).to_s(36)
 		
-		pass = Code.create(text: key, date: Time)
+		pass = Code.create(text: key, date: Time.now)
 		
 
 		qrcode = RQRCode::QRCode.new("http://github.com/")

@@ -3535,3 +3535,67 @@ Processing by QrcodeController#qrcode_encode as HTML
 Completed 200 OK in 140ms (Views: 35.2ms | ActiveRecord: 6.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-07-01 06:08:28 +0600
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/alish/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by QrcodeController#qrcode_encode as HTML
+  [1m[36mAttendance Load (0.2ms)[0m  [1m[34mSELECT  "attendances".* FROM "attendances" WHERE "attendances"."date" = ? LIMIT ?[0m  [["date", "2018-07-01"], ["LIMIT", 1]]
+  ↳ app/controllers/qrcode_controller.rb:6
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/qrcode_controller.rb:15
+  [1m[36mCode Create (0.3ms)[0m  [1m[32mINSERT INTO "codes" ("text", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["text", "94s6and9pq"], ["date", "2000-01-01 00:08:28.507921"], ["created_at", "2018-07-01 00:08:28.515730"], ["updated_at", "2018-07-01 00:08:28.515730"]]
+  ↳ app/controllers/qrcode_controller.rb:15
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/qrcode_controller.rb:15
+  Rendering qrcode/showpage.html.erb within layouts/application
+  Rendered qrcode/showpage.html.erb within layouts/application (169.4ms)
+Completed 200 OK in 357ms (Views: 181.9ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-01 06:08:29 +0600
+Processing by QrcodeController#qrcode_encode as HTML
+  [1m[36mAttendance Load (0.5ms)[0m  [1m[34mSELECT  "attendances".* FROM "attendances" WHERE "attendances"."date" = ? LIMIT ?[0m  [["date", "2018-07-01"], ["LIMIT", 1]]
+  ↳ app/controllers/qrcode_controller.rb:6
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/qrcode_controller.rb:15
+  [1m[36mCode Create (0.5ms)[0m  [1m[32mINSERT INTO "codes" ("text", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["text", "gtuj27srnj"], ["date", "2000-01-01 00:08:29.979805"], ["created_at", "2018-07-01 00:08:29.981913"], ["updated_at", "2018-07-01 00:08:29.981913"]]
+  ↳ app/controllers/qrcode_controller.rb:15
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/qrcode_controller.rb:15
+  Rendering qrcode/showpage.html.erb within layouts/application
+  Rendered qrcode/showpage.html.erb within layouts/application (44.4ms)
+Completed 200 OK in 219ms (Views: 67.1ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-01 06:08:30 +0600
+Processing by QrcodeController#qrcode_encode as HTML
+  [1m[36mAttendance Load (0.6ms)[0m  [1m[34mSELECT  "attendances".* FROM "attendances" WHERE "attendances"."date" = ? LIMIT ?[0m  [["date", "2018-07-01"], ["LIMIT", 1]]
+  ↳ app/controllers/qrcode_controller.rb:6
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/qrcode_controller.rb:15
+  [1m[36mCode Create (0.7ms)[0m  [1m[32mINSERT INTO "codes" ("text", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["text", "ktw29nzbzr"], ["date", "2000-01-01 00:08:30.686444"], ["created_at", "2018-07-01 00:08:30.687770"], ["updated_at", "2018-07-01 00:08:30.687770"]]
+  ↳ app/controllers/qrcode_controller.rb:15
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/qrcode_controller.rb:15
+  Rendering qrcode/showpage.html.erb within layouts/application
+  Rendered qrcode/showpage.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 158ms (Views: 29.3ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-01 06:08:31 +0600
+Processing by QrcodeController#qrcode_encode as HTML
+  [1m[36mAttendance Load (0.3ms)[0m  [1m[34mSELECT  "attendances".* FROM "attendances" WHERE "attendances"."date" = ? LIMIT ?[0m  [["date", "2018-07-01"], ["LIMIT", 1]]
+  ↳ app/controllers/qrcode_controller.rb:6
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/qrcode_controller.rb:15
+  [1m[36mCode Create (1.5ms)[0m  [1m[32mINSERT INTO "codes" ("text", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["text", "y6kqnxvb4n"], ["date", "2000-01-01 00:08:31.276145"], ["created_at", "2018-07-01 00:08:31.277463"], ["updated_at", "2018-07-01 00:08:31.277463"]]
+  ↳ app/controllers/qrcode_controller.rb:15
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/qrcode_controller.rb:15
+  Rendering qrcode/showpage.html.erb within layouts/application
+  Rendered qrcode/showpage.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 154ms (Views: 32.7ms | ActiveRecord: 6.4ms)
+
+
+  [1m[36mCode Load (0.6ms)[0m  [1m[34mSELECT  "codes".* FROM "codes" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCode Load (0.2ms)[0m  [1m[34mSELECT  "codes".* FROM "codes" ORDER BY "codes"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
